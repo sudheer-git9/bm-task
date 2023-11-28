@@ -1,0 +1,29 @@
+<div class="dialog-container">
+    <div class="header">
+        <div class="title">
+            {{this.data.posts[this.data.index].title}}
+        </div>
+        <div class="actions">
+            <button> <mat-icon [matBadge]="this.data.posts[this.data.index].reactions" aria-hidden="true"
+                    fontIcon="add_reaction"></mat-icon></button>
+            <button [disabled]="this.data.index == 0" (click)="onPrev()">
+                <mat-icon aria-hidden="false" fontIcon="arrow_back_ios"></mat-icon>
+            </button>
+            <button [disabled]="this.data.index == (this.data.posts.length -1)" (click)="onNext()">
+                <mat-icon aria-hidden="false" fontIcon="arrow_forward_ios"></mat-icon>
+            </button>
+        </div>
+    </div>
+    <div class="content">
+
+        <div class="content-body">
+            {{this.data.posts[this.data.index].body}}
+        </div>
+        <div class="content-tags">
+            <div *ngFor="let tag of this.data.posts[this.data.index].tags">{{tag}}</div>
+        </div>
+    </div>
+    <div class="footer">
+        <button (click)="close()">Close</button>
+    </div>
+</div>
