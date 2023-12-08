@@ -1,0 +1,40 @@
+<div class="add-fpo-button">
+    <button matTooltip="Add FPO Details" (click)="addFpoDetails()"> <mat-icon aria-hidden="false"
+            fontIcon="add"></mat-icon></button>
+</div>
+<div *ngIf="farmersFPOData && !loader" class="main">
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <ng-container *ngFor="let col of tableColums">
+                        <th>
+                            {{col.combineColumn ? col.combineColumn+ '':'' }}
+                            {{col.name}}
+                        </th>
+                    </ng-container>
+                    <th>
+                        Action
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let row of farmersFPOData">
+                    <ng-container *ngFor="let col of tableColums">
+                        <td> {{col.isCombineColumn ? row[((col.key).split('.'))[0]][((col.key).split('.'))[1]] :
+                            row[col.key]}}
+                        </td>
+                    </ng-container>
+                    <td>
+                        <button matTooltip="Edit FPO Details" (click)="updateFpoDetails(row)"><mat-icon
+                                aria-hidden="false" fontIcon="edit"></mat-icon></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div *ngIf="loader" class="loader">
+    <mat-spinner></mat-spinner>
+</div>

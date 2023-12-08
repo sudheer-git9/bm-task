@@ -1,0 +1,456 @@
+<div class="dialog-container">
+    <div class="header">
+        <div class="title">
+            {{this.data ? 'Update' : 'Add'}} Details
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-body">
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>FPO Name</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormData.fpoName">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Name Of Resource Institute</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormData.nameOfResourceInstitute">
+                </mat-form-field>
+            </div>
+
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Spoc Name</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormData.spocName">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Poc Designation</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormData.pocDesignation">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Spoc MobileNumber</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormData.spocMobileNumber">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Spoc Email</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormData.spocEmail">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Spoc Website</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormData.spocWebsite">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Register Office</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormData.registerOffice">
+                </mat-form-field>
+            </div>
+
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Administrative Office</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormData.administrativeOffice">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Rent Or Leased</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormData.rentOrLeased">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Incorporation Period</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormData.incorporationPeriod">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Balance Sheet</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormData.balanceSheet">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Subscribed Share Capital</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormData.subscribedShareCapital">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>PAN Available</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormData.panAvailable">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>GST Available</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormData.gstAvailable">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>CEO</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormData.ceo">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Total Number Of Sml Farmer</mat-label>
+                    <input matInput type="number" [(ngModel)]="fpoFormData.totalNumberOfSmlFarmer">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Total Land Holding Of Sml Farmer</mat-label>
+                    <input matInput type="number" [(ngModel)]="fpoFormData.totalLandHoldingOfSmlFarmer">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Total Number Of Med Farmer</mat-label>
+                    <input matInput type="number" [(ngModel)]="fpoFormData.totalNumberOfMedFarmer">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Total Land Holding Of Med Farmer</mat-label>
+                    <input matInput type="number" [(ngModel)]="fpoFormData.totalLandHoldingOfMedFarmer">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Total Number Of Big Farmer</mat-label>
+                    <input matInput type="number" [(ngModel)]="fpoFormData.totalNumberOfBigFarmer">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Total Land Holding Of BigFarmer</mat-label>
+                    <input matInput type="number" [(ngModel)]="fpoFormData.totalLandHoldingOfBigFarmer">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Number Of Woman Share Holders</mat-label>
+                    <input matInput type="number" [(ngModel)]="fpoFormData.numberOfWomanShareHolders">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Number Of St.Share Holders</mat-label>
+                    <input matInput type="number" [(ngModel)]="fpoFormData.numberOfStShareHolders">
+                </mat-form-field>
+            </div>
+
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Number Of Sc Share Holders</mat-label>
+                    <input matInput type="number" [(ngModel)]="fpoFormData.numberOfScShareHolders">
+                </mat-form-field>
+            </div>
+
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Increase In Last Six Months</mat-label>
+                    <input matInput type="number" [(ngModel)]="fpoFormData.increaseInLastSixMonths">
+                </mat-form-field>
+            </div>
+
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Number Of Active Members</mat-label>
+                    <input matInput type="number" [(ngModel)]="fpoFormData.numberOfActiveMembers">
+                </mat-form-field>
+            </div>
+
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Non Members Availing Service FPC</mat-label>
+                    <input matInput type="number" [(ngModel)]="fpoFormData.nonMembersAvailingServiceFpc">
+                </mat-form-field>
+            </div>
+
+
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>FPO Role</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormData.fpoRole">
+                </mat-form-field>
+            </div>
+            <!-- fpoComplianceRequest date selector -->
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Fertilizer Validity Date</mat-label>
+                    <input matInput type="number" [(ngModel)]="fpoFormData.fpoComplianceRequest.fertilizerValidityDate">
+                </mat-form-field>
+            </div>
+
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Pesticide Insecticide Validity Date</mat-label>
+                    <input matInput type="number"
+                        [(ngModel)]="fpoFormData.fpoComplianceRequest.pesticideInsecticideValidityDate">
+                </mat-form-field>
+            </div>
+
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Seeds Validity Date</mat-label>
+                    <input matInput type="number" [(ngModel)]="fpoFormData.fpoComplianceRequest.seedsValidityDate">
+                </mat-form-field>
+            </div>
+
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Mport Export Validity Date</mat-label>
+                    <input matInput type="number"
+                        [(ngModel)]="fpoFormData.fpoComplianceRequest.mportExportValidityDate">
+                </mat-form-field>
+            </div>
+
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Direct Marketing Validity Date</mat-label>
+                    <input matInput type="number"
+                        [(ngModel)]="fpoFormData.fpoComplianceRequest.directMarketingValidityDate">
+                </mat-form-field>
+            </div>
+
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Fssai Validity Date</mat-label>
+                    <input matInput type="number" [(ngModel)]="fpoFormData.fpoComplianceRequest.fssaiValidityDate">
+                </mat-form-field>
+            </div>
+
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>GST ValidityDate</mat-label>
+                    <input matInput type="number" [(ngModel)]="fpoFormData.fpoComplianceRequest.gstValidityDate">
+                </mat-form-field>
+            </div>
+
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Pollution Validity Date</mat-label>
+                    <input matInput type="number" [(ngModel)]="fpoFormData.fpoComplianceRequest.pollutionValidityDate">
+                </mat-form-field>
+            </div>
+            <!-- fpoComplianceRequest ends here -->
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Name</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormData.fpoStaffRequest.name">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Date Of Birth</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormData.fpoStaffRequest.dateOfBirth">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Qualification</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormData.fpoStaffRequest.qualification">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>PAN</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormData.fpoStaffRequest.pan">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Address</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormData.fpoStaffRequest.address">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Occupation</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormData.fpoStaffRequest.occupation">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Experience</mat-label>
+                    <input matInput type="number" [(ngModel)]="fpoFormData.fpoStaffRequest.experience">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>LandLine</mat-label>
+                    <input matInput type="number" [(ngModel)]="fpoFormData.fpoStaffRequest.landLine">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Mobile Number</mat-label>
+                    <input matInput type="number" [(ngModel)]="fpoFormData.fpoStaffRequest.mobileNumber">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Associated With Oth Institutions</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormData.fpoStaffRequest.associatedWithOthInstitutions">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Authorized Signature</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormData.fpoStaffRequest.authorizedSignature">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Date Of Appointment</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormData.fpoStaffRequest.dateOfAppointment">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Salary</mat-label>
+                    <input matInput type="number" [(ngModel)]="fpoFormData.fpoStaffRequest.salary">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Bank Name</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormData.fpoStaffRequest.bankName">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Bank Address</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormData.fpoStaffRequest.bankAddress">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Account Type</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormData.fpoStaffRequest.accountType">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Account Number</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormData.fpoStaffRequest.accountNumber">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>IFSC Code</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormData.fpoStaffRequest.ifscCode">
+                </mat-form-field>
+            </div>
+            <!-- Files -->
+
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Rent Or Leased</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormDataTwo.rentOrLeased">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Incorporation Period</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormDataTwo.incorporationPeriod">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>PAN Available</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormDataTwo.panAvailable">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>GST Available</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormDataTwo.gstAvailable">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Fertilizer License Validity</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormDataTwo.fertilizerLicenseValidity">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Pesticide Insecticide Validity</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormDataTwo.pesticideInsecticideValidity">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Seeds Validity</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormDataTwo.seedsValidity">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Import ExportValidity</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormDataTwo.importExportValidity">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Direct Marketing Validity</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormDataTwo.directMarketingValidity">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Fssai Validity</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormDataTwo.fssaiValidity">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>Pollution Validity</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormDataTwo.pollutionValidity">
+                </mat-form-field>
+            </div>
+            <div class="input-container">
+                <mat-form-field class="form-field" appearance="outline">
+                    <mat-label>GST Validity</mat-label>
+                    <input matInput type="text" [(ngModel)]="fpoFormDataTwo.gstValidity">
+                </mat-form-field>
+            </div>
+
+        </div>
+
+        <div class="content-body">
+            <div class="input-container file">
+                <label for="avatar">Choose a Staff Photo:</label>
+                <input type="file" (change)="onChange('staffPhoto' , $event)" accept="image/png, image/jpeg">
+            </div>
+            <div class="input-container file">
+                <label for="avatar">Choose a Registered Address Photo:</label>
+                <input type="file" (change)="onChange('registeredAddress' , $event)" accept="image/png, image/jpeg">
+            </div>
+            <div class="input-container file">
+                <label for="avatar">Choose a Account Details Photo:</label>
+                <input type="file" (change)="onChange('accountDetails' , $event)" accept="image/png, image/jpeg">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <button (click)="close()">Close</button>
+        <button (click)="onSubmit()" class="submit-button">{{data ? 'Update' : 'Submit'}}</button>
+    </div>
+
+</div>

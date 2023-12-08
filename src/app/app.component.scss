@@ -1,153 +1,20 @@
-.main {
-
+.navbar {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    padding: 10px 10px;
+    gap: 10px;
 
-    .table-container {
-        width: 90%;
-        padding: 5px;
-
-        table {
-            width: 100%;
-
-            thead {
-                font-size: 14px;
-                font-weight: 400;
-
-                tr {
-                    border-top: 1px solid #ccc;
-                }
-
-                th {
-                    padding: 15px 5px;
-                    min-width: 80px;
-                    background-color: #009a4a;
-                    color: #fff;
-                    font-weight: 500;
-                }
-            }
-
-            tbody {
-                font-size: 12px;
-                font-weight: 400;
-
-                tr {
-                    cursor: pointer;
-
-                    td {
-                        padding: 10px 5px;
-
-                        .tag-container {
-                            display: flex;
-                            flex-direction: column;
-                            gap: 3px;
-
-                            div {
-                                border: 1px solid #ccc;
-                                padding: 3px;
-                                text-align: center;
-                                border-radius: 20px;
-                            }
-                        }
-                    }
-
-                    &:nth-child(even) {
-                        background-color: #eaeaea;
-                    }
-
-                    td.center-align {
-                        text-align: center;
-                    }
-
-                    &:hover {
-                        background-color: #d0f3e1;
-                    }
-                }
-
-            }
-        }
-    }
-}
-
-.loader {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.dialog-container {
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-
-    .header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 5px;
-
-        .actions {
-            display: flex;
-            flex-direction: row;
-            font-size: 14px;
-            font-weight: 500;
-
-            button {
-                background-color: transparent;
-                border: none;
-                padding: 5px 10px;
-                cursor: pointer;
-            }
-        }
+    button {
+        padding: 5px 10px;
+        background-color: #ccc;
+        border: none;
+        border-radius: 15px;
     }
 
-    .content {
-        padding: 10px 0px;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-
-        .content-body {
-            font-size: 12px;
-            font-weight: 400;
-        }
-
-        .content-tags {
-            display: flex;
-            flex-direction: row;
-            gap: 5px;
-
-            div {
-                border: 1px solid #ccc;
-                padding: 2px 5px;
-                text-align: center;
-                border-radius: 20px;
-                font-size: 10px;
-
-            }
-        }
-
-
-    }
-
-    .footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-
-        button {
-            padding: 5px 10px;
-            border: none;
-            border-radius: 14px;
-            cursor: pointer;
-
-            &:hover {
-                background-color: #d0f3e1;
-            }
-        }
+    .active {
+        background-color: #009a4a;
+        color: #fff;
+        font-weight: 600;
     }
 }

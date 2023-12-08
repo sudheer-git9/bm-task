@@ -1,37 +1,9 @@
-<section class="main">
-  <div class="table-container">
-    <table *ngIf="totalData">
-      <thead>
-        <tr>
-          <th>Id</th>
-          <th>User Id</th>
-          <th>Title</th>
-          <th>Body</th>
-          <th>Tags</th>
-          <th>Reactions</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let post of totalData.posts;let i = index" (click)="openDialog(i)">
-          <td class="center-align">{{post.id}}</td>
-          <td class="center-align">{{post.userId}}</td>
-          <td>{{post.title}}</td>
-          <td>{{post.body}}</td>
-          <td>
-            <div class="tag-container">
-              <div *ngFor="let tag of post.tags">
-                {{tag}}
-              </div>
-            </div>
-          </td>
-          <td class="center-align">
-            <mat-icon [matBadge]="post.reactions" aria-hidden="false" fontIcon="add_reaction"></mat-icon>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+<section class="navbar">
+  <button [routerLink]="['/home']" routerLinkActive="active">
+    Home
+  </button>
+  <button [routerLink]="['/stories']" routerLinkActive="active">
+    Stories
+  </button>
 </section>
-<div *ngIf="!totalData" class="loader">
-  <mat-spinner></mat-spinner>
-</div>
+<router-outlet></router-outlet>
