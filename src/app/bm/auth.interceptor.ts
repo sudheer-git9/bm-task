@@ -39,7 +39,8 @@ export class AuthInterceptor implements HttpInterceptor {
 
   public addTokenToRequest(request: HttpRequest<any>, token: string): HttpRequest<any> {
     if (token && request.url.indexOf('mocki.io') === -1) {
-      let res = request.clone({ setHeaders: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': '*/*' } });
+
+      let res = request.clone({ setHeaders: { Authorization: `Bearer ${token}`, 'Accept': '*/*' } });
       return res;
     } else {
       return request;

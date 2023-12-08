@@ -223,7 +223,7 @@ export class DialogEditDialog implements OnInit {
     for (const key in this.fpoFormDataTwo) {
       if (Object.prototype.hasOwnProperty.call(this.fpoFormDataTwo, key)) {
         const element = this.fpoFormDataTwo[key];
-        formData.append(key, element ? element : new File([], ''));
+        formData.append(key, element); //? element : new File([], '')
       }
     }
 

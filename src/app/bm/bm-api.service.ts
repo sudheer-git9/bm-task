@@ -22,10 +22,10 @@ export class BmApiService {
   }
 
   updateFPODetails(body: any): Observable<any> {
-    // const headers = new HttpHeaders({
-    //   'Content-Type': 'application/json'
-    // });
-    return this.httpC.post(`${this.api}/api/v1/farmer/fpo/add-fpo-details`, body);
+    const headers = new HttpHeaders({
+      'Content-Type': 'multipart/form-data;',
+    });
+    return this.httpC.post(`${this.api}/api/v1/farmer/fpo/add-fpo-details`, body, { headers });
   }
 
 }
