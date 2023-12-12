@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 export const CommonConst = {
     production: true,
-    token: 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI5ODQ0MjgyNTgzIiwiZXhwIjoxNzAyMDE4ODAzLCJpYXQiOjE3MDE0MTQwMDN9._pA3lIiIRfMr0-UKpAimblMh14OH0RMxY0KLW_r1EID7uEghccgIsTyeCHjVf2eYefNBXuCNYyIHHlQhJ41DvQ'
+    token: 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI5ODQ0MjgyNTgzIiwiZXhwIjoxNzAyODk3NjgxLCJpYXQiOjE3MDIyOTI4ODF9.B9zSlf_cHcPMI4sEwDlv6Exor2fEs0GtVt8fVA7LPjqmgXue2ljM5GJY34JB_E-DFRzXPK4ujduAhZnn_w9iwQ'
 }
 
 @Injectable({ providedIn: 'root' })

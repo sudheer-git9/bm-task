@@ -1,5 +1,5 @@
 <div class="add-fpo-button">
-    <button matTooltip="Add FPO Details" (click)="addFpoDetails()"> <mat-icon aria-hidden="false"
+    <button matTooltip="Add FPO Details" [routerLink]="['/add-fpo']"> <mat-icon aria-hidden="false"
             fontIcon="add"></mat-icon></button>
 </div>
 <div *ngIf="farmersFPOData && !loader" class="main">
@@ -26,8 +26,11 @@
                         </td>
                     </ng-container>
                     <td>
-                        <button matTooltip="Edit FPO Details" (click)="updateFpoDetails(row)"><mat-icon
+                        <button matTooltip="Edit FPO Details" [routerLink]="['/edit-fpo/'+row.fpoDetailsId]"><mat-icon
                                 aria-hidden="false" fontIcon="edit"></mat-icon></button>
+
+                        <button [routerLink]="['/view/'+row.fpoDetailsId]" matTooltip="View FPO Details"><mat-icon
+                                aria-hidden="false" fontIcon="visibility"></mat-icon></button>
                     </td>
                 </tr>
             </tbody>

@@ -1,0 +1,610 @@
+<div class="main">
+    <div *ngIf="fpoForm" class="main-container">
+        <mat-stepper #stepper>
+            <mat-step [stepControl]="fpoForm" label="FPO Details">
+                <form [formGroup]="fpoForm">
+                    <div class="form-container">
+                        <div class="content-body">
+                            <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>FPO Name</mat-label>
+                                    <input matInput type="text" formControlName="fpoName">
+                                </mat-form-field>
+                            </div>
+                            <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>Name Of Resource Institute</mat-label>
+                                    <input matInput type="text" formControlName="nameOfResourceInstitute">
+                                </mat-form-field>
+                            </div>
+                            <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>SPOC Name</mat-label>
+                                    <input matInput type="text" formControlName="spocName">
+                                </mat-form-field>
+                            </div>
+                            <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>SPOC Designation</mat-label>
+                                    <input matInput type="text" formControlName="spocDesignation">
+                                </mat-form-field>
+                            </div>
+                            <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>SPOC MobileNumber</mat-label>
+                                    <input matInput type="text" formControlName="spocMobileNumber">
+                                </mat-form-field>
+                            </div>
+                            <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>SPOC Email</mat-label>
+                                    <input matInput type="text" formControlName="spocEmail">
+                                </mat-form-field>
+                            </div>
+                            <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>SPOC Website</mat-label>
+                                    <input matInput type="text" formControlName="spocWebsite">
+                                </mat-form-field>
+                            </div>
+                            <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>Register Office</mat-label>
+                                    <input matInput type="text" formControlName="registerOffice">
+                                </mat-form-field>
+                            </div>
+                            <!-- <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>Register Office Image</mat-label>
+                                    <input matInput type="text" formControlName="registerOfficeImage">
+                                </mat-form-field>
+                            </div> -->
+                            <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>Administrative Office</mat-label>
+                                    <input matInput type="text" formControlName="administrativeOffice">
+                                </mat-form-field>
+                            </div>
+                            <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>Rent Or Leased</mat-label>
+                                    <input matInput type="text" formControlName="rentOrLeased">
+                                </mat-form-field>
+                            </div>
+                            <!-- <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>Rent Or Leased Image</mat-label>
+                                    <input matInput type="text" formControlName="rentOrLeasedImage">
+                                </mat-form-field>
+                            </div> -->
+                            <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>Incorporation Period</mat-label>
+                                    <input matInput type="text" formControlName="incorporationPeriod">
+                                </mat-form-field>
+                            </div>
+                            <!-- <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>Incorporation Period Image</mat-label>
+                                    <input matInput type="text" formControlName="incorporationPeriodImage">
+                                </mat-form-field>
+                            </div> -->
+
+                            <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>Balance Sheet</mat-label>
+                                    <input matInput type="text" formControlName="balanceSheet">
+                                </mat-form-field>
+                            </div>
+                            <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>Subscribed Share Capital</mat-label>
+                                    <input matInput type="text" formControlName="subscribedShareCapital">
+                                </mat-form-field>
+                            </div>
+                            <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>PAN Available</mat-label>
+                                    <input matInput type="text" formControlName="panAvailable">
+                                </mat-form-field>
+                            </div>
+                            <!-- <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>PAN Image</mat-label>
+                                    <input matInput type="text" formControlName="panImage">
+                                </mat-form-field>
+                            </div> -->
+                            <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>GST Available</mat-label>
+                                    <input matInput type="text" formControlName="gstAvailable">
+                                </mat-form-field>
+                            </div>
+                            <!-- <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>GST Image</mat-label>
+                                    <input matInput type="text" formControlName="gstImage">
+                                </mat-form-field>
+                            </div> -->
+                            <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>CEO</mat-label>
+                                    <input matInput type="text" formControlName="ceo">
+                                </mat-form-field>
+                            </div>
+                            <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>Total Number Of Sml Farmer</mat-label>
+                                    <input matInput type="number" formControlName="totalNumberOfSmlFarmer">
+                                </mat-form-field>
+                            </div>
+                            <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>totalLandHoldingOfSmlFarmer</mat-label>
+                                    <input matInput type="number" formControlName="totalLandHoldingOfSmlFarmer">
+                                </mat-form-field>
+                            </div>
+                            <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>totalNumberOfMedFarmer</mat-label>
+                                    <input matInput type="number" formControlName="totalNumberOfMedFarmer">
+                                </mat-form-field>
+                            </div>
+                            <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>totalLandHoldingOfMedFarmer</mat-label>
+                                    <input matInput type="number" formControlName="totalLandHoldingOfMedFarmer">
+                                </mat-form-field>
+                            </div>
+                            <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>totalNumberOfBigFarmer</mat-label>
+                                    <input matInput type="number" formControlName="totalNumberOfBigFarmer">
+                                </mat-form-field>
+                            </div>
+                            <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>totalLandHoldingOfBigFarmer</mat-label>
+                                    <input matInput type="number" formControlName="totalLandHoldingOfBigFarmer">
+                                </mat-form-field>
+                            </div>
+                            <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>numberOfWomanShareHolders</mat-label>
+                                    <input matInput type="number" formControlName="numberOfWomanShareHolders">
+                                </mat-form-field>
+                            </div>
+                            <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>numberOfStShareHolders</mat-label>
+                                    <input matInput type="number" formControlName="numberOfStShareHolders">
+                                </mat-form-field>
+                            </div>
+                            <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>numberOfScShareHolders</mat-label>
+                                    <input matInput type="number" formControlName="numberOfScShareHolders">
+                                </mat-form-field>
+                            </div>
+                            <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>increaseInLastSixMonths</mat-label>
+                                    <input matInput type="number" formControlName="increaseInLastSixMonths">
+                                </mat-form-field>
+                            </div>
+                            <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>numberOfActiveMembers</mat-label>
+                                    <input matInput type="number" formControlName="numberOfActiveMembers">
+                                </mat-form-field>
+                            </div>
+                            <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>nonMembersAvailingServiceFpc</mat-label>
+                                    <input matInput type="number" formControlName="nonMembersAvailingServiceFpc">
+                                </mat-form-field>
+                            </div>
+                            <div class="input-container">
+                                <mat-form-field class="form-field" appearance="outline">
+                                    <mat-label>fpoRole</mat-label>
+                                    <input matInput type="text" formControlName="fpoRole">
+                                </mat-form-field>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="action-container">
+                        <button mat-button matStepperNext>Next</button>
+                    </div>
+                </form>
+            </mat-step>
+            <ng-container *ngIf="fpoComplainceForm">
+                <mat-step [stepControl]="fpoComplainceForm" label="FPO Compliance">
+                    <form [formGroup]="fpoComplainceForm">
+                        <div class="form-container">
+                            <div class="content-body">
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>Fertilizer Validity Date</mat-label>
+                                        <!-- <input matInput type="text" formControlName="fertilizerValidityDate"> -->
+                                        <input autocomplete="off" matInput readonly [matDatepicker]="dp"
+                                            formControlName="fertilizerValidityDate" (click)="dp.open()"
+                                            placeholder="Select Date">
+                                        <mat-datepicker-toggle matSuffix [for]="dp">
+                                            <mat-icon matDatepickerToggleIcon>event</mat-icon>
+                                        </mat-datepicker-toggle>
+                                        <mat-datepicker #dp></mat-datepicker>
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>Pesticide Insecticide Validity Date</mat-label>
+                                        <!-- <input matInput type="text" formControlName="fertilizerValidityDate"> -->
+                                        <input autocomplete="off" matInput readonly
+                                            [matDatepicker]="pesticideInsecticideValidityDate"
+                                            formControlName="pesticideInsecticideValidityDate"
+                                            (click)="pesticideInsecticideValidityDate.open()" placeholder="Select Date">
+                                        <mat-datepicker-toggle matSuffix [for]="pesticideInsecticideValidityDate">
+                                            <mat-icon matDatepickerToggleIcon>event</mat-icon>
+                                        </mat-datepicker-toggle>
+                                        <mat-datepicker #pesticideInsecticideValidityDate></mat-datepicker>
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>Seeds ValidityDate</mat-label>
+                                        <!-- <input matInput type="text" formControlName="fertilizerValidityDate"> -->
+                                        <input autocomplete="off" matInput readonly [matDatepicker]="seedsValidityDate"
+                                            formControlName="seedsValidityDate" (click)="seedsValidityDate.open()"
+                                            placeholder="Select Date">
+                                        <mat-datepicker-toggle matSuffix [for]="seedsValidityDate">
+                                            <mat-icon matDatepickerToggleIcon>event</mat-icon>
+                                        </mat-datepicker-toggle>
+                                        <mat-datepicker #seedsValidityDate></mat-datepicker>
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>Import Export Validity Date</mat-label>
+                                        <!-- <input matInput type="text" formControlName="fertilizerValidityDate"> -->
+                                        <input autocomplete="off" matInput readonly
+                                            [matDatepicker]="importExportValidityDate"
+                                            formControlName="importExportValidityDate"
+                                            (click)="importExportValidityDate.open()" placeholder="Select Date">
+                                        <mat-datepicker-toggle matSuffix [for]="importExportValidityDate">
+                                            <mat-icon matDatepickerToggleIcon>event</mat-icon>
+                                        </mat-datepicker-toggle>
+                                        <mat-datepicker #importExportValidityDate></mat-datepicker>
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>Direct Marketing Validity Date</mat-label>
+                                        <!-- <input matInput type="text" formControlName="fertilizerValidityDate"> -->
+                                        <input autocomplete="off" matInput readonly
+                                            [matDatepicker]="directMarketingValidityDate"
+                                            formControlName="directMarketingValidityDate"
+                                            (click)="directMarketingValidityDate.open()" placeholder="Select Date">
+                                        <mat-datepicker-toggle matSuffix [for]="directMarketingValidityDate">
+                                            <mat-icon matDatepickerToggleIcon>event</mat-icon>
+                                        </mat-datepicker-toggle>
+                                        <mat-datepicker #directMarketingValidityDate></mat-datepicker>
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>Fssai Validity Date</mat-label>
+                                        <!-- <input matInput type="text" formControlName="fertilizerValidityDate"> -->
+                                        <input autocomplete="off" matInput readonly [matDatepicker]="fssaiValidityDate"
+                                            formControlName="fssaiValidityDate" (click)="fssaiValidityDate.open()"
+                                            placeholder="Select Date">
+                                        <mat-datepicker-toggle matSuffix [for]="fssaiValidityDate">
+                                            <mat-icon matDatepickerToggleIcon>event</mat-icon>
+                                        </mat-datepicker-toggle>
+                                        <mat-datepicker #fssaiValidityDate></mat-datepicker>
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>Gst Validity Date</mat-label>
+                                        <!-- <input matInput type="text" formControlName="fertilizerValidityDate"> -->
+                                        <input autocomplete="off" matInput readonly [matDatepicker]="gstValidityDate"
+                                            formControlName="gstValidityDate" (click)="gstValidityDate.open()"
+                                            placeholder="Select Date">
+                                        <mat-datepicker-toggle matSuffix [for]="gstValidityDate">
+                                            <mat-icon matDatepickerToggleIcon>event</mat-icon>
+                                        </mat-datepicker-toggle>
+                                        <mat-datepicker #gstValidityDate></mat-datepicker>
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>Pollution Validity Date</mat-label>
+                                        <!-- <input matInput type="text" formControlName="fertilizerValidityDate"> -->
+                                        <input autocomplete="off" matInput readonly
+                                            [matDatepicker]="pollutionValidityDate"
+                                            formControlName="pollutionValidityDate"
+                                            (click)="pollutionValidityDate.open()" placeholder="Select Date">
+                                        <mat-datepicker-toggle matSuffix [for]="pollutionValidityDate">
+                                            <mat-icon matDatepickerToggleIcon>event</mat-icon>
+                                        </mat-datepicker-toggle>
+                                        <mat-datepicker #pollutionValidityDate></mat-datepicker>
+                                    </mat-form-field>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="action-container">
+                            <button mat-button matStepperPrevious>Back</button>
+                            <button mat-button matStepperNext>Next</button>
+                        </div>
+                    </form>
+                </mat-step>
+
+            </ng-container>
+            <ng-container *ngIf="fpoStaffForm">
+                <mat-step [stepControl]="fpoStaffForm" label="FPO Staff Details">
+                    <form [formGroup]="fpoStaffForm">
+                        <div class="form-container">
+                            <div class="content-body">
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>Name</mat-label>
+                                        <input matInput type="text" formControlName="name">
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>Date Of Birth</mat-label>
+                                        <!-- <input matInput type="text" formControlName="fertilizerValidityDate"> -->
+                                        <input autocomplete="off" matInput readonly [matDatepicker]="dateOfBirth"
+                                            formControlName="dateOfBirth" (click)="dateOfBirth.open()"
+                                            placeholder="Select Date">
+                                        <mat-datepicker-toggle matSuffix [for]="dateOfBirth">
+                                            <mat-icon matDatepickerToggleIcon>event</mat-icon>
+                                        </mat-datepicker-toggle>
+                                        <mat-datepicker #dateOfBirth></mat-datepicker>
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>Qualification</mat-label>
+                                        <input matInput type="text" formControlName="qualification">
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>PAN</mat-label>
+                                        <input matInput type="text" formControlName="pan">
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>Address</mat-label>
+                                        <input matInput type="text" formControlName="address">
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>Occupation</mat-label>
+                                        <input matInput type="text" formControlName="occupation">
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>Experience</mat-label>
+                                        <input matInput type="text" formControlName="experience">
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>LandLine</mat-label>
+                                        <input matInput type="text" formControlName="landLine">
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>Mobile Number</mat-label>
+                                        <input matInput type="text" formControlName="mobileNumber">
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>Associated With Oth Institutions</mat-label>
+                                        <input matInput type="text" formControlName="associatedWithOthInstitutions">
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>Authorized Signature</mat-label>
+                                        <input matInput type="text" formControlName="authorizedSignature">
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>Date Of Appointment</mat-label>
+                                        <!-- <input matInput type="text" formControlName="fertilizerValidityDate"> -->
+                                        <input autocomplete="off" matInput readonly [matDatepicker]="dateOfAppointment"
+                                            formControlName="dateOfAppointment" (click)="dateOfAppointment.open()"
+                                            placeholder="Select Date">
+                                        <mat-datepicker-toggle matSuffix [for]="dateOfAppointment">
+                                            <mat-icon matDatepickerToggleIcon>event</mat-icon>
+                                        </mat-datepicker-toggle>
+                                        <mat-datepicker #dateOfAppointment></mat-datepicker>
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>Salary</mat-label>
+                                        <input matInput type="text" formControlName="salary">
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>Bank Name</mat-label>
+                                        <input matInput type="text" formControlName="bankName">
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>Bank Address</mat-label>
+                                        <input matInput type="text" formControlName="bankAddress">
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>Account Type</mat-label>
+                                        <input matInput type="text" formControlName="accountType">
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>Account Number</mat-label>
+                                        <input matInput type="text" formControlName="accountNumber">
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>IFSC Code</mat-label>
+                                        <input matInput type="text" formControlName="ifscCode">
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="action-container">
+                            <button mat-button matStepperPrevious>Back</button>
+                            <button mat-button matStepperNext>Next</button>
+                        </div>
+                    </form>
+                </mat-step>
+            </ng-container>
+
+            <ng-container *ngIf="fpoOthersForm">
+                <mat-step [stepControl]="fpoOthersForm" label="FPO Other Details">
+                    <form [formGroup]="fpoOthersForm">
+                        <div class="form-container">
+                            <div class="content-body">
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>Rent Or Leased</mat-label>
+                                        <input matInput type="text" formControlName="rentOrLeased">
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>Incorporation Period</mat-label>
+                                        <input matInput type="text" formControlName="incorporationPeriod">
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>PAN Available</mat-label>
+                                        <input matInput type="text" formControlName="panAvailable">
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>GST Available</mat-label>
+                                        <input matInput type="text" formControlName="gstAvailable">
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>Fertilizer License Validity</mat-label>
+                                        <input matInput type="text" formControlName="fertilizerLicenseValidity">
+                                    </mat-form-field>
+                                </div>
+
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>Pesticide Insecticide Validity</mat-label>
+                                        <input matInput type="text" formControlName="pesticideInsecticideValidity">
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>Seeds Validity</mat-label>
+                                        <input matInput type="text" formControlName="seedsValidity">
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>Import Export Validity</mat-label>
+                                        <input matInput type="text" formControlName="importExportValidity">
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>Direct Marketing Validity</mat-label>
+                                        <input matInput type="text" formControlName="directMarketingValidity">
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>Fssai Validity</mat-label>
+                                        <input matInput type="text" formControlName="fssaiValidity">
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>Pollution Validity</mat-label>
+                                        <input matInput type="text" formControlName="pollutionValidity">
+                                    </mat-form-field>
+                                </div>
+                                <div class="input-container">
+                                    <mat-form-field class="form-field" appearance="outline">
+                                        <mat-label>Gst Validity</mat-label>
+                                        <input matInput type="text" formControlName="gstValidity">
+                                    </mat-form-field>
+                                </div>
+                                <div class="file-input-container">
+                                    <div class="upload-container">
+                                        <label style="margin-top: 6px">Staff Photo: </label>
+                                        <button class="mb-1" style="height: 36px;" mat-raised-button type="button"
+                                            color="primary" (click)="staffPhoto.click()">Upload</button>
+                                        <input hidden #staffPhoto (change)="uploadFile('staffPhoto', $event)"
+                                            type="file">
+                                    </div>
+                                    <div *ngIf="fpoOthersForm.value.staffPhoto" class="file-name">
+                                        {{fpoOthersForm.value.staffPhoto.name}}</div>
+                                </div>
+                                <div class="file-input-container">
+                                    <div class="upload-container">
+                                        <label style="margin-top: 6px">Registered Address: </label>
+                                        <button class="mb-1" style="height: 36px;" mat-raised-button type="button"
+                                            color="primary" (click)="registeredAddress.click()">Upload</button>
+                                        <input hidden #registeredAddress
+                                            (change)="uploadFile('registeredAddress', $event)" type="file">
+                                    </div>
+                                    <div *ngIf="fpoOthersForm.value.registeredAddress" class="file-name">
+                                        {{fpoOthersForm.value.registeredAddress.name}}</div>
+                                </div>
+
+                                <div class="file-input-container">
+                                    <div class="upload-container">
+                                        <label style="margin-top: 6px">Account Details: </label>
+                                        <button class="mb-1" style="height: 36px;" mat-raised-button type="button"
+                                            color="primary" (click)="accountDetails.click()">Upload</button>
+                                        <input hidden #accountDetails (change)="uploadFile('accountDetails', $event)"
+                                            type="file">
+                                    </div>
+                                    <div *ngIf="fpoOthersForm.value.accountDetails" class="file-name">
+                                        {{fpoOthersForm.value.accountDetails.name}}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="action-container">
+                            <button mat-button matStepperPrevious>Back</button>
+                            <button mat-button matStepperNext (click)="onSubmit()">Submit</button>
+                        </div>
+                    </form>
+                </mat-step>
+            </ng-container>
+
+        </mat-stepper>
+    </div>
+</div>

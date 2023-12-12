@@ -1,0 +1,99 @@
+.main {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .main-container {
+        // width: 90%;
+        padding: 5px;
+
+    }
+
+    .actions-container {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        justify-content: flex-end;
+        padding-bottom: 5px;
+
+        button {
+            padding: 5px 20px;
+            background-color: #ccc;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 1rem
+        }
+    }
+}
+
+.form-container {
+    padding: 5px 10px;
+
+    .content-body {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        flex-wrap: wrap;
+        font-size: 12px;
+        justify-content: flex-start;
+        width: 100%;
+
+        .input-container {
+            // flex: 23%
+            flex: 1 0 21%;
+
+        }
+
+        .file-input-container {
+            flex: 1 0 21%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+
+            .upload-container {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+.action-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: flex-end;
+}
+
+:host ::ng-deep mat-form-field {
+    width: 100%;
+}
+
+:host ::ng-deep .mdc-text-field .mdc-floating-label {
+    transform: translateY(-95%);
+}
+
+// :host ::ng-deep .mat-mdc-form-field-infix {
+//     min-height: 30px !important;
+// }
+
+:host ::ng-deep .mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+    padding-top: 4px;
+    padding-bottom: 3px;
+}
+
+:host ::ng-deep .mat-mdc-text-field-wrapper {
+    height: 32px;
+}
+
+:host ::ng-deep .mat-step-icon-selected,
+:host ::ng-deep .mat-step-icon-state-edit {
+    background-color: #009a4a;
+}

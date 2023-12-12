@@ -1,9 +1,21 @@
-<section class="navbar">
-  <button [routerLink]="['/home']" routerLinkActive="active">
-    Home
-  </button>
-  <button [routerLink]="['/stories']" routerLinkActive="active">
-    Stories
-  </button>
+<section class="app-body">
+  <section class="navbar">
+    <div class="logo">
+      <img src="assets/bharatMandi.svg" alt="logo">
+    </div>
+  </section>
+
+  <section class="main">
+    <div class="side-container">
+      <button [routerLink]="['/view']" routerLinkActive="active">
+        View All
+      </button>
+      <button [routerLink]="['/stories']" routerLinkActive="active">
+        Stories
+      </button>
+    </div>
+    <div class="main-container">
+      <router-outlet></router-outlet>
+    </div>
+  </section>
 </section>
-<router-outlet></router-outlet>

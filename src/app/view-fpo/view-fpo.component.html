@@ -1,0 +1,455 @@
+<div *ngIf="fpoDetails && !loader" class="main">
+
+    <div class="main-container">
+        <mat-tab-group>
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    FPO
+                </ng-template>
+                <div class="tab-container">
+                    <div class="field-container">
+                        <div class="label">FPO Name</div>
+                        <div class="value-details">{{fpoDetails.fpoName}}</div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">FPO Id</div>
+                        <div class="value-details">{{fpoDetails.fpoDetailsId}}</div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">FPO Role</div>
+                        <div class="value-details">{{fpoDetails.fpoRole }}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Name Of Resource Institute</div>
+                        <div class="value-details">{{fpoDetails.nameOfResourceInstitute}}</div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">SPOC Name</div>
+                        <div class="value-details">{{fpoDetails.spocName ? fpoDetails.spocName : ''}}</div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">SPOC Designation</div>
+                        <div class="value-details">{{fpoDetails.spocDesignation ? fpoDetails.spocDesignation : '' }}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">SPOC MobileNumber</div>
+                        <div class="value-details">{{fpoDetails.spocMobileNumber ? fpoDetails.spocMobileNumber : '' }}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">SPOC Email</div>
+                        <div class="value-details">{{fpoDetails.spocEmail ? fpoDetails.spocEmail : '' }}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">SPOC Website</div>
+                        <div class="value-details">{{fpoDetails.spocWebsite ? fpoDetails.spocWebsite : '' }}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Register Office</div>
+                        <div class="value-details">{{fpoDetails.registerOffice ? fpoDetails.registerOffice : '' }}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Administrative Office</div>
+                        <div class="value-details">{{fpoDetails.administrativeOffice ? fpoDetails.administrativeOffice :
+                            '' }}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Rent Or Leased</div>
+                        <div class="value-details">{{fpoDetails.rentOrLeased ? 'Yes' : 'No' }}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Incorporation Period</div>
+                        <div class="value-details">{{fpoDetails.incorporationPeriod ? fpoDetails.incorporationPeriod :
+                            '' }}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">BalanceSheet</div>
+                        <div class="value-details">{{fpoDetails.balanceSheet ? fpoDetails.balanceSheet : '' }}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Subscribed Share Capital</div>
+                        <div class="value-details">{{fpoDetails.subscribedShareCapital ?
+                            fpoDetails.subscribedShareCapital : '' }}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">PAN Available</div>
+                        <div class="value-details">{{fpoDetails.panAvailable ? 'Yes' : 'No' }}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">GST Available</div>
+                        <div class="value-details">{{fpoDetails.gstAvailable ? 'Yes' : 'No' }}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">ceo</div>
+                        <div class="value-details">{{fpoDetails.ceo ? 'Yes' : 'No' }}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Total Number Of Sml Farmer</div>
+                        <div class="value-details">{{fpoDetails.totalNumberOfSmlFarmer}}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Total Land Holding Of Sml Farmer</div>
+                        <div class="value-details">{{fpoDetails.totalLandHoldingOfSmlFarmer }}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Total Number Of Med Farmer</div>
+                        <div class="value-details">{{fpoDetails.totalNumberOfMedFarmer }}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Total Land Holding Of Med Farmer</div>
+                        <div class="value-details">{{fpoDetails.totalLandHoldingOfMedFarmer }}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Total Number Of Big Farmer</div>
+                        <div class="value-details">{{fpoDetails.totalNumberOfBigFarmer }}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Total Land Holding Of Big Farmer</div>
+                        <div class="value-details">{{fpoDetails.totalLandHoldingOfBigFarmer }}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Number Of Woman Share Holders</div>
+                        <div class="value-details">{{fpoDetails.numberOfWomanShareHolders }}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Number Of St Share Holders</div>
+                        <div class="value-details">{{fpoDetails.numberOfStShareHolders }}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Number Of Sc ShareHolders</div>
+                        <div class="value-details">{{fpoDetails.numberOfScShareHolders }}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Increase In Last Six Months</div>
+                        <div class="value-details">{{fpoDetails.increaseInLastSixMonths }}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Number Of Active Members</div>
+                        <div class="value-details">{{fpoDetails.numberOfActiveMembers }}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Non Members Availing Service FPC</div>
+                        <div class="value-details">{{fpoDetails.nonMembersAvailingServiceFpc }}
+                        </div>
+                    </div>
+
+
+                </div>
+            </mat-tab>
+
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    FPO Compliance
+                </ng-template>
+                <div class="tab-container">
+                    <div class="field-container">
+                        <div class="label">FPO Compliance Id</div>
+                        <div class="value-details">
+                            {{fpoDetails.fpoCompliance.fpoComplianceId}}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Fertilizer Validity Date</div>
+                        <div class="value-details">
+                            {{fpoDetails.fpoCompliance.fertilizerValidityDate ?
+                            fpoDetails.fpoCompliance.fertilizerValidityDate :''}}</div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Pesticide Insecticide Validity Date</div>
+                        <div class="value-details">
+                            {{fpoDetails.fpoCompliance.pesticideInsecticideValidityDate ?
+                            fpoDetails.fpoCompliance.pesticideInsecticideValidityDate :''}}</div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Seeds Validity Date</div>
+                        <div class="value-details">
+                            {{fpoDetails.fpoCompliance.seedsValidityDate ? fpoDetails.fpoCompliance.seedsValidityDate
+                            :''}}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Import Export Validity Date</div>
+                        <div class="value-details">
+                            {{fpoDetails.fpoCompliance.importExportValidityDate ?
+                            fpoDetails.fpoCompliance.importExportValidityDate :''}}</div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Direct Marketing Validity Date</div>
+                        <div class="value-details">
+                            {{fpoDetails.fpoCompliance.directMarketingValidityDate ?
+                            fpoDetails.fpoCompliance.directMarketingValidityDate :''}}</div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Fssai Validity Date</div>
+                        <div class="value-details">
+                            {{fpoDetails.fpoCompliance.fssaiValidityDate ? fpoDetails.fpoCompliance.fssaiValidityDate
+                            :''}}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">GST Validity Date</div>
+                        <div class="value-details">
+                            {{fpoDetails.fpoCompliance.gstValidityDate ? fpoDetails.fpoCompliance.gstValidityDate :''}}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Pollution Validity Date</div>
+                        <div class="value-details">
+                            {{fpoDetails.fpoCompliance.pollutionValidityDate ?
+                            fpoDetails.fpoCompliance.pollutionValidityDate :''}}</div>
+                    </div>
+                </div>
+            </mat-tab>
+
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    FPO Staff Details
+                </ng-template>
+                <!-- <img src="https://s3.ap-south-1.amazonaws.com/bm-app-resources/staffPhoto-107-1702297127415-1" alt=""> -->
+
+                <div class="tab-container">
+                    <div class="field-container">
+                        <div class="label">FPO Staff Details Id</div>
+                        <div class="value-details">
+                            {{fpoDetails.fpoStaffDetails.fpoStaffDetailsId}}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Name</div>
+                        <div class="value-details">
+                            {{fpoDetails.fpoStaffDetails.name ? fpoDetails.fpoStaffDetails.name : ''}}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Date Of Birth</div>
+                        <div class="value-details">
+                            {{fpoDetails.fpoStaffDetails.dateOfBirth ? fpoDetails.fpoStaffDetails.dateOfBirth : ''}}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Qualification</div>
+                        <div class="value-details">
+                            {{fpoDetails.fpoStaffDetails.qualification ? fpoDetails.fpoStaffDetails.qualification : ''}}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">PAN</div>
+                        <div class="value-details">
+                            {{fpoDetails.fpoStaffDetails.pan ? fpoDetails.fpoStaffDetails.pan : ''}}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Address</div>
+                        <div class="value-details">
+                            {{fpoDetails.fpoStaffDetails.address ? fpoDetails.fpoStaffDetails.address : ''}}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Occupation</div>
+                        <div class="value-details">
+                            {{fpoDetails.fpoStaffDetails.occupation ? fpoDetails.fpoStaffDetails.occupation : ''}}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Experience</div>
+                        <div class="value-details">
+                            {{fpoDetails.fpoStaffDetails.experience ? fpoDetails.fpoStaffDetails.experience : ''}}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">LandLine</div>
+                        <div class="value-details">
+                            {{fpoDetails.fpoStaffDetails.landLine ? fpoDetails.fpoStaffDetails.landLine : ''}}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">MobileNumber</div>
+                        <div class="value-details">
+                            {{fpoDetails.fpoStaffDetails.mobileNumber ? fpoDetails.fpoStaffDetails.mobileNumber : ''}}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Associated With Oth Institutions</div>
+                        <div class="value-details">
+                            {{fpoDetails.fpoStaffDetails.associatedWithOthInstitutions ?
+                            fpoDetails.fpoStaffDetails.associatedWithOthInstitutions : ''}}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Authorized Signature</div>
+                        <div class="value-details">
+                            {{fpoDetails.fpoStaffDetails.authorizedSignature ? 'Yes' : 'No'}}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Date Of Appointment</div>
+                        <div class="value-details">
+                            {{fpoDetails.fpoStaffDetails.dateOfAppointment ?
+                            fpoDetails.fpoStaffDetails.dateOfAppointment : ''}}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Salary</div>
+                        <div class="value-details">
+                            {{fpoDetails.fpoStaffDetails.salary ? fpoDetails.fpoStaffDetails.salary : ''}}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Bank Name</div>
+                        <div class="value-details">
+                            {{fpoDetails.fpoStaffDetails.bankName ? fpoDetails.fpoStaffDetails.bankName : ''}}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Bank Address</div>
+                        <div class="value-details">
+                            {{fpoDetails.fpoStaffDetails.bankAddress ? fpoDetails.fpoStaffDetails.bankAddress : ''}}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Account Type</div>
+                        <div class="value-details">
+                            {{fpoDetails.fpoStaffDetails.accountType ? fpoDetails.fpoStaffDetails.accountType : ''}}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Account Number</div>
+                        <div class="value-details">
+                            {{fpoDetails.fpoStaffDetails.accountNumber ? fpoDetails.fpoStaffDetails.accountNumber : ''}}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">IFSC Code</div>
+                        <div class="value-details">
+                            {{fpoDetails.fpoStaffDetails.ifscCode ? fpoDetails.fpoStaffDetails.ifscCode : ''}}
+                        </div>
+                    </div>
+                </div>
+            </mat-tab>
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    Audit
+                </ng-template>
+                <div class="tab-container">
+                    <div class="field-container">
+                        <div class="label">Created User</div>
+                        <div class="value-details">
+                            {{fpoDetails.audit.createdUser}}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Created Time</div>
+                        <div class="value-details">
+                            {{fpoDetails.audit.createdTime | date:'yyyy-mm-dd'}}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Updated User</div>
+                        <div class="value-details">
+                            {{fpoDetails.audit.updatedUser}}
+                        </div>
+                    </div>
+                    <div class="field-container">
+                        <div class="label">Updated User</div>
+                        <div class="value-details">
+                            {{fpoDetails.audit.updatedTime | date:'yyyy-mm-dd'}}
+                        </div>
+                    </div>
+                </div>
+            </mat-tab>
+            <!-- <mat-tab>
+                <ng-template mat-tab-label>
+                    Files
+                </ng-template>
+                <div class="tab-container">
+                    <div *ngIf="fpoDetails.PanImage" class="field-container">
+                        <div class="label">PAN Image</div>
+                        <div class="value-details">
+                            <img [src]="fpoDetails.PanImage" [alt]="fpoDetails.PanImage">
+                        </div>
+                    </div>
+                    <div *ngIf="fpoDetails.GstImage" class="field-container">
+                        <div class="label">GST Image</div>
+                        <div class="value-details">
+                            <img [src]="fpoDetails.GstImage" [alt]="fpoDetails.GstImage">
+                        </div>
+                    </div>
+                    <div *ngIf="fpoDetails.fertilizerImage" class="field-container">
+                        <div class="label">Fertilizer Image</div>
+                        <div class="value-details">
+                            <img [src]="fpoDetails.fertilizerImage " [alt]="fpoDetails.fertilizerImage">
+                        </div>
+                    </div>
+                    <div *ngIf="fpoDetails.pesticideInsecticideImage" class="field-container">
+                        <div class="label">Pesticide Insecticide Image</div>
+                        <div class="value-details">
+                            <img [src]="fpoDetails.pesticideInsecticideImage"
+                                alt="fpoDetails.pesticideInsecticideImage">
+                        </div>
+                    </div>
+                    <div *ngIf="fpoDetails.seedsImage" class="field-container">
+                        <div class="label">Seeds Image</div>
+                        <div class="value-details">
+                            <img [src]="fpoDetails.seedsImage" alt="">
+                        </div>
+                    </div>
+                    <div *ngIf="fpoDetails.importExportImage" class="field-container">
+                        <div class="label">Import Export Image</div>
+                        <div class="value-details">
+                            <img [src]="fpoDetails.importExportImage" alt="">
+                        </div>
+                    </div>
+                    <div *ngIf="fpoDetails.directMarketingImage" class="field-container">
+                        <div class="label">Direct Marketing Image</div>
+                        <div class="value-details">
+                            <img [src]="fpoDetails.directMarketingImage" alt="">
+                        </div>
+                    </div>
+                    <div *ngIf="fpoDetails.fssaiImage" class="field-container">
+                        <div class="label">FSSAI Image</div>
+                        <div class="value-details">
+                            <img [src]="fpoDetails.fssaiImage" alt="">
+                        </div>
+                    </div>
+                    <div *ngIf="fpoDetails.pollutionImage" class="field-container">
+                        <div class="label">Pollution Image</div>
+                        <div class="value-details">
+                            <img [src]="fpoDetails.pollutionImage" alt="">
+                        </div>
+                    </div>
+                </div>
+            </mat-tab> -->
+        </mat-tab-group>
+    </div>
+    <div class="actions-container">
+        <button [routerLink]="['/edit-fpo/'+fpoDetailsId]">Edit</button>
+    </div>
+</div>
+
+<div *ngIf="loader" class="loader">
+    <mat-spinner></mat-spinner>
+</div>
